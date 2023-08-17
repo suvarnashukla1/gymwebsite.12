@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energym</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+<link ref="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Tektur', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('girl-g42ef1ba7c_1920.jpg');
+        color: white;
+    }
+
+    .left {
+        /* border: 2px red solid; */
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 50px;
+        line-height: 20px;
+    }
+
+    .left img {
+        width: 70px;
+    }
+    .left:hover{
+        font-size:1.3rem;
+    }
+    .left img:hover{
+        width:80px;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        cursor: pointer;
+        padding: 4px 14px;
+        border-radius: 10px;
+        margin: 8px;
+        font-size: 12px;
+        font-family: 'Tektur', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(52, 38, 38);
+    }
+
+    #opium {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px yellow solid; */
+        display: block;
+        width: 40%;
+        margin: 18px auto;
+
+    }
+
+    .right {
+        /* border: 2px green solid; */
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 32px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 28px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        cursor: pointer;
+        text-decoration: underline;
+        color: yellow;
+
+    }
+
+    .container {
+        border: white 2px dashed;
+        padding: 30px;
+        width: 50%;
+        border-radius: 10px;
+        margin: 90px 70px;
+    }
+
+    .form input {
+        text-align: center;
+        display: block;
+        width: 55%;
+        border-radius: 10px;
+        margin: 12px auto;
+        border: 2px grey solid;
+        padding: 8px;
+        font-size: 15px;
+        font-family: 'Tektur', cursive;
+    }
+    .form input:hover{
+        background-color:rgb(236, 198, 192);
+    }
+
+    #mi {
+        width: 45%;
+    top: 20px;
+    left: 90px
+    }
+    #wi{
+        width:45%;
+        top:20px;
+        right:90px;
+
+    }
+    .container h2{
+        text-align: center;
+        font-size:40px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    #ml{
+        margin: auto 300px;
+    padding: 10px;
+    width: 40%
+    }
+    
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <!-- logo -->
+            <img src="fitness-gym-logo-premium-vector_144543-140.avif" alt="">
+            <div id="opium">Energym</div>
+        </div>
+        <div class="mid">
+            <!-- navigation -->
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <!-- button -->
+            <button class="btn">View Plans</button><button class="btn">Gallery</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Jabalpur.</h1>
+        <h2>NOW!</h2>
+        <form action="action.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <div id="ml">Male:<input type="radio"name="Mygender">Female:<input type="radio"name="Mygender"></div>
+            <button class="btn" id="mi">Submit</button><button class="btn" id="wi">Reset</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
